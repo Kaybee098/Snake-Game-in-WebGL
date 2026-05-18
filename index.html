@@ -3,14 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bingo Game</title>
-    <h1>Snake Game</h1>
+    <title>Bingo Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <canvas id="canvas"
-    height="500"
-    width="500"
-    style="border: 4px solid rgb(0, 0, 0);"></canvas>
+
+    <h1>Snake Game</h1>
+    <h2 class="author-credit">Made by Thyphoon</h2>
+
+    <div class="main-container">
+        
+        <div class="game-wrapper">
+            <canvas id="canvas" height="500" width="500"></canvas>
+            
+            <div id="game-overlay">
+                <h2>GAME OVER</h2>
+                <p id="reason-text">Reason</p>
+                <p>Final Score: <strong id="score-text">0</strong></p>
+                <button onclick="location.reload()">Play Again</button>
+            </div>
+        </div>
+
+        <div class="score-panel">
+            <div class="score-label">Score</div>
+            <div id="live-score">0</div>
+        </div>
+
+    </div>
+
     <script src="snake2.js"></script>
 </body>
 </html>
